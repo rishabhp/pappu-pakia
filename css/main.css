@@ -100,6 +100,8 @@ h1, #loadText {
 	width: auto;
 	max-width: 1000px;
 	height: 500px;
+	/* fix slow user selection on webkit based touch devices */
+	-webkit-user-select: none;
 }
 
 footer {
