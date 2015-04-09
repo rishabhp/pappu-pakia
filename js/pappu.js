@@ -60,7 +60,7 @@
 
     draw: function(ctx) {
       var cur_sprite_frame = this.fly_frame_count / this.change_per_frame;
-      
+
       if (utils.isInt(cur_sprite_frame)) {
         var source_y = cur_sprite_frame * 60;
       }
@@ -72,8 +72,6 @@
         var old_sprite_frame = parseInt(this.fly_frame_count/this.change_per_frame)
         var source_y = old_sprite_frame * 60;
       }
-      
-      // console.log(cur_sprite_frame, source_x);
 
       // Rotation on Flying
       if (mit.flying_up) {
@@ -115,8 +113,6 @@
           this.undoInvincible();
         else
           mit.ui.invincible_loader.css('width', timer_progress + '%');
-
-        // console.log(timer_progress)
       }
 
       ctx.drawImage(
@@ -136,7 +132,7 @@
 
     drawStatic: function(ctx) {
       var cur_sprite_frame = this.fly_frame_count / this.change_per_frame;
-      
+
       if (utils.isInt(cur_sprite_frame)) {
         var source_y = cur_sprite_frame * 60;
       }
@@ -163,7 +159,7 @@
         this.w,
         60
       );*/
-      
+
       ctx.drawImage(
         this.sprite,
         0,
@@ -260,7 +256,7 @@
       // super optimization :P
       if (!self.clones.length)
         return;
-      
+
       var branches = mit.BranchUtils.branches;
       var forks = mit.ForkUtils.forks;
       var pakias = mit.PakiaUtils.pakias;

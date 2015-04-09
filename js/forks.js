@@ -35,7 +35,6 @@
       b.end_x   = this.x + this.w;
       b.end_y   = this.y + this.h;
 
-      //console.log(bounds);
       return b;
     };
 
@@ -52,7 +51,7 @@
     };
   };
 
-  
+
   // A ForkUtils class to help save the world
 
   mit.ForkUtils = {
@@ -154,7 +153,7 @@
           count = this.count;
 
       if (forks.length < count) {
-        
+
         for (var i = 0; i < count - forks.length; i++) {
           var fork = new mit.Fork();
 
@@ -167,7 +166,6 @@
 
             fork.dig_x = dig_img.width / dig_rand;
             fork.dig_y = mit.H - dig_img.height;
-            // console.log(this.dig_img.width);
 
             fork.y = 200 + utils.randomNumber(0,100);
             fork.y += fork_head_img.height;
@@ -187,7 +185,7 @@
 
           forks.push(fork);
         }
-        
+
       }
     },
 
@@ -199,7 +197,7 @@
           dead_forks = 0;
 
       this.create();
-      
+
       // Loop over forks and draw each of them
       forks.forEach(function(fork, index) {
 
@@ -212,7 +210,6 @@
 
         // Out of view port, no need to draw
         if (fork.x > mit.W) {
-          // console.log('out of view port');
           return;
         }
 
@@ -301,11 +298,10 @@
       var pappu_bounds = mit.Pappu.getBounds(),
           // Get Nearest Fork's Handle's Bounds
           fork_bounds = first_fork.getHandleBounds();
-      
+
       // Check whether pappu collided with the
       // fork handle or not.
       if (utils.intersect(pappu_bounds, fork_bounds)) {
-        // console.log(pappu_bounds, fork_bounds);
         mit.gameOver();
       }
 
