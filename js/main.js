@@ -71,6 +71,9 @@ mit.main = function() {
     canvas.height = canvas.width * 500/1000;
   }
 
+  $(".docs").css("top", canvas.height + 10);
+
+
   // BG Canvas
   var bg_canvas = document.querySelector('#game_bg');
   var bg_ctx = bg_canvas.getContext('2d');
