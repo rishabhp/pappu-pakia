@@ -141,7 +141,7 @@ h1, #loadText {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10px;
     background: #FF6767;
     z-index: 10;
 }
