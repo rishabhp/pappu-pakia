@@ -1,5 +1,60 @@
-@font-face{ 
-	font-family: 'Happy Sans';
+@import url("primer.css");
+@import url(https://fonts.googleapis.com/css?family=Joti+One&subset=latin,latin-ext);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/octicons/2.2.2/octicons.min.css");
+
+body {
+  font-family: 'Open Sans', Verdana;
+}
+h1, #loadText {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Joti One', cursive;
+}
+#loadText {
+    line-height: 380px;
+    font-size: 30px;
+}
+.container {
+    position: relative;
+    margin: 20px auto 50px;
+    width: auto;
+    max-width: 1000px;
+    height: 500px;
+}
+
+.gads {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+#mute {
+    width: 49px;
+    height: 40px;
+    background: url(../img/mute.png) no-repeat;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 15;
+    background-position: 0 0;
+}
+
+#fps_count {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Joti One', cursive;
+}
+
+@font-face{
+	font-family: 'Joti One';
 	src: url('../fonts/happy_sans-webfont.eot');
 	src: url('../fonts/happy_sans-webfont.eot?#iefix') format('embedded-opentype'),
 	     url('../fonts/happy_sans-webfont.woff') format('woff'),
@@ -9,353 +64,200 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-* {
-  margin: 0; padding: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.controls {
+    width: 200px;
+    height: 48px;
+    background: url(../img/controls.png) no-repeat top center;
+    margin: 10px auto;
+    position: absolute;
+    top: 60%; left: 50%;
+    margin-top: -24px; margin-left: -100px;
+}
+
+/* options */
+.options {
+    height: 400px;
+    background-image: url(../img/stand.png);
+    background-position: bottom center;
+    width: 225px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.options:before {
+    content: '';
+    background-image: url(../img/dig.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 47px;
+    height: 49px;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -27px;
+    z-index: -1;
+}
+
+.options ul {
+    margin: 0;
+    padding: 50px 0 0;
+    list-style: none;
+}
+
+.options ul li {
+    display: block;
+    font: 30px 'Joti One', cursive;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.options ul li a {
+    color: #FFEEAA;
+    text-decoration: none;
+}
+
+.options ul li:first-child {
+    background: url(../img/plank_top.png) no-repeat top center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.options ul li:nth-child(2) {
+    background: url(../img/plank_mid.png) no-repeat top center;
+    height: 63px;
+    line-height: 63px;
+}
+
+.options ul li:last-child {
+    background: url(../img/plank_bot.png) no-repeat top center;
+    height: 75px;
+    line-height: 75px;
 }
 
 /* Loading */
 #loading {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #FF6767;
-	z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    background: #FF6767;
+    z-index: 10;
 }
 
 #loading #barCont {
-	width: 400px;
-	height: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -10px 0 0 -200px;
-	background: black;
+    width: 400px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -200px;
+    background: black;
 }
 
 #loading #bar {
-	width: 0;
-	height: 20px;
-	position: absolute;
-	left: 0;
-	background: #F3FF67;
+    width: 0;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    background: #F3FF67;
 }
 
-html, body {
-  width: 100%; height: 100%;
-}
-
-body {
-  background: #000 url(http://i.imgur.com/XgUk6.jpg) top center no-repeat fixed;
-  font-family: 'Open Sans', Verdana;
-}
-
-h1, #loadText {
-	text-align: center;
-	color: #fff;
-	margin-top: 20px;
-	font-family: 'Happy Sans', cursive;
-}
-
-#loadText {
-	line-height: 380px;
-	font-size: 30px;
-}
-
-#fps_count {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	font-size: 20px;
-	color: white;
-	font-family: 'Happy Sans', cursive;
-}
-
-.gads {
-	text-align: center;
-	max-width: 1000px;
-	margin: 20px auto;
-}
-
-#mute {
-	width: 49px;
-	height: 40px;
-	background: url(../img/mute.png) no-repeat;
-	display: block;
-	text-decoration: none;
-	outline: none;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	z-index: 15;
-	background-position: 0 0;
-}
-
-.container {
-	position: relative;
-	margin: 20px auto 50px;
-	width: auto;
-	max-width: 1000px;
-	height: 500px;
-}
-
-footer {
-	margin: 20px auto;
-	padding: 0 0 20px;
-	max-width: 1000px;
-}
-footer h3 {
-	color: #E7E7E7;
-	margin-top: 30px;
-	font-size: 18px;
-	margin-bottom: 10px;
-}
-footer p {
-	margin-bottom: 10px;
-	font-size: 13px;
-	font-weight: normal;
-	color: #D1D1D1;
-}
-footer a {
-	text-decoration: none;
-	color: #FF6767;
-}
-footer a:visited {
-	color: #7FFF67;
-}
-footer a:hover {
-	color: #67DBFF;
-}
-footer a:active {
-	color: #F3FF67;
-}
-footer a:focus {
-	color: #FF67ED;
-}
-
-
+/* game canvas */
 canvas#game_main {
   display: block;
   margin: 0 auto;
   position: absolute;
 }
 canvas#game_bg {
-	display: block;
-	margin: 0 auto;
-	position: absolute;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
 }
-
-
 /* Score Board */
 #score_board {
-	position: absolute;
-	top: 0; left: 0; right: 0;
-	padding: 10px;
-	height: 10%;
-	text-align: left;
-	font-size: 30px;
-	font-weight: normal;
-	font-family: 'Happy Sans', cursive;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 10px;
+    height: 10%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'Joti One', cursive;
 
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 #invincible_timer {
-	width: 150px;
-	height: 10px;
-	position: absolute;
-	top: 20px;
-	left: 50%;
-	border: 1px solid #fff;
-	margin-left: -75px;
-	display: none;
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    border: 1px solid #fff;
+    margin-left: -75px;
+    display: none;
 }
 #invincible_loader {
-	width: 100%; height: 100%;
-	background: #FDCF7D;
+    width: 100%; height: 100%;
+    background: #FDCF7D;
 }
 
 
 /* Start Screen */
 #start_screen {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	z-index: 1;
-	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
 
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 #title {
-	font-size: 67px;
-	line-height: 100px;
-	font-weight: normal;
-	color: #945430;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	text-shadow: 3px 3px 0px white;
+    font-size: 67px;
+    line-height: 100px;
+    font-weight: normal;
+    color: #945430;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 3px 0px white;
 }
 
 #credits, #high_score, #last_score {
-	font: 36px 'Happy Sans', cursive;
-	color: white;
-	padding: 0;
-	text-align: center;
-	margin: -10px 0 10px;
+    font: 36px 'Joti One', cursive;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: -10px 0 10px;
 }
 
 #credits a {
-	color: #FFEEAA;
-	text-decoration: none;
+    color: #FFEEAA;
+    text-decoration: none;
 }
 
-.options {
-	height: 400px;
-	background-image: url(../img/stand.png);
-	background-position: bottom center;
-	width: 225px;
-	background-repeat: no-repeat;
-	position: absolute;
-	bottom: 0;
-	right: 50px;
+.docs {
+    position: absolute;
+    top: 510px;
+    padding:;
 }
 
-.options:before {
-	content: '';
-	background-image: url(../img/dig.png);
-	background-repeat: no-repeat;
-	position: absolute;
-	width: 47px;
-	height: 49px;
-	bottom: -1px;
-	left: 50%;
-	margin-left: -27px;
-	z-index: -1;
+.docs ul {
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
-.options ul {
-	margin: 0;
-	padding: 50px 0 0;
-	list-style: none;
-}
-
-.options ul li {
-	display: block;
-	font: 40px 'Happy Sans', cursive;
-	text-align: center;
-	margin: 0 0 20px;
-}
-
-.options ul li a {
-	color: #FFEEAA;
-	text-decoration: none;
-}
-
-.options ul li:first-child {
-	background: url(../img/plank_top.png) no-repeat top center;
-	height: 70px;
-	line-height: 70px;
-}
-
-.options ul li:nth-child(2) {
-	background: url(../img/plank_mid.png) no-repeat top center;
-	height: 63px;
-	line-height: 63px;
-}
-
-.options ul li:last-child {
-	background: url(../img/plank_bot.png) no-repeat top center;
-	height: 75px;
-	line-height: 75px;
-}
-
-.controls {
-	width: 200px;
-	height: 48px;
-	background: url(../img/controls.png) no-repeat top center;
-	margin: 10px auto;
-	position: absolute;
-	top: 60%; left: 50%;
-	margin-top: -24px; margin-left: -100px;
-}
-
-/* Share Buttons */
-#share_btns {
-	max-width: 420px;
-	overflow: hidden;
-	margin: 0 auto;
-}
-
-.share-button {
-	float: left;
-	margin-right: 10px;
-}
-
-#disqus_thread {
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-#disqus_thread a {
-	color: red;
-}
-
-div.comments-button a, div.chrome-button  a{
-  background-color: #52a8e8;
-  background-image: -webkit-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: -moz-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: -ms-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: -o-linear-gradient(top, #52a8e8, #377ad0);
-  background-image: linear-gradient(top, #52a8e8, #377ad0);
-  color: #fff;
-  font: normal 11px "open sans", sans-serif;
-  line-height: 1;
-  padding: 3px 5px;
-  text-align: center;
-  text-decoration: none;
-  width: 112px;
-  border-radius: 3px;
-}
-
-div.comments-button a:hover {
-    background-color: #3e9ee5;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e9ee5), color-stop(100%, #206bcb));
-    background-image: -webkit-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
-    background-image: -moz-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
-    background-image: -ms-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
-    background-image: -o-linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
-    background-image: linear-gradient(top, #3e9ee5 0%, #206bcb 100%);
-}
-
-div.chrome-button {
-	float: none;
-	display: block;
-	margin: 0 auto;
-	width: 200px;
-}
-
-div.chrome-button a {
-	width: 200px;
-	display: block;
-	margin: 20px auto;
-	font-size: 13px;
-	padding: 10px;
-	background-image: -webkit-linear-gradient(top, #5587da, #4d7cd6);
-	background-image: -moz-linear-gradient(top, #5587da, #4d7cd6);
-	background-image: -ms-linear-gradient(top, #5587da, #4d7cd6);
-	background-image: -o-linear-gradient(top, #5587da, #4d7cd6);
-	background-image: linear-gradient(top, #5587da, #4d7cd6);
-	box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.4);
+.text-center {
+    text-align: center;
 }

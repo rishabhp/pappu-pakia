@@ -63,7 +63,7 @@
       document.getElementById("angry_jump"),
       document.getElementById("sad_jump"),
       document.getElementById("happy_jump")
-    ],      
+    ],
 
     pakia_img: {
       sad: {},
@@ -92,8 +92,6 @@
 
       for (var i = 0; i < 3; i++) {
         var pakia = new mit.Pakia();
-        pakia.w = this.pakia_img.sad.width;
-        pakia.h = this.pakia_img.sad.height;
 
         pakia.generateRandomPos();
 
@@ -102,6 +100,8 @@
         pakia.type = this.types[i];
         // pakia.type = this.types[0];
 
+        pakia.w = this.pakia_img[pakia.type].width;
+        pakia.h = this.pakia_img[pakia.type].height;
         if (pakia.type == 'angry')
           pakia.sound = this.sounds[0];
         else if (pakia.type == 'sad')
@@ -111,8 +111,6 @@
 
         this.pakias.push(pakia);
       }
-
-      //console.log(this.pakias);
     },
 
     reflow: function(ctx) {
@@ -132,7 +130,6 @@
 
       this.cur_pakia.x += this.cur_pakia.vx;
       this.cur_pakia.y += this.cur_pakia.vy;
-      // console.log(this.cur_pakia.x)
 
       // Reset positions
       if (

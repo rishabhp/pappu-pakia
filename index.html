@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OctoPakia | Khelein</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="five-fifths">
+                <!-- Start Screen -->
+                <div id="start_screen">
+                    <h1 id="title">OctoPakia</h1>
+                    <h3 id="credits">
+                        by
+                        <a href="https://twitter.com/SolitaryDesigns">Kushagra</a>
+                        and
+                        <a href="https://twitter.com/_rishabhp">Rishabh</a><br>
+                        enhanced by <a href="http://twitter.com/IonicaBizau">Ionică Bizău</a>
+                    </h3>
+                    <h3 id="last_score"></h3>
+                    <h3 id="high_score"></h3>
+                    <div class="controls"></div>
+                    <div class="options">
+                        <ul>
+                            <li><a href="javascript:void(0);" id="start_game">start</a></li>
+                            <li><a href="javascript:void(0);" target="_blank" id="tweet">tweet</a></li>
+                            <li><a href="javascript:void(0);" target="_blank" id="fb">fb like</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Start Screen -->
+                <!-- Loading sounds -->
+                <audio id="start" loop>
+                    <source src="sound/pappu-pakia2.3.ogg"  type="audio/ogg">
+                    <source src="sound/pappu-pakia2.3.mp3"  type="audio/mp3">
+                </audio>
+                <audio id="angry_jump">
+                    <source src="sound/jump1.ogg" type="audio/ogg">
+                    <source src="sound/jump1.mp3" type="audio/mp3">
+                </audio>
+                <audio id="sad_jump">
+                    <source src="sound/jump2.ogg" type="audio/ogg">
+                    <source src="sound/jump2.mp3" type="audio/mp3">
+                </audio>
+                <audio id="happy_jump">
+                    <source src="sound/jump3.ogg" type="audio/ogg">
+                    <source src="sound/jump3.mp3" type="audio/mp3">
+                </audio>
+                <audio id="flap">
+                    <source src="sound/flap.ogg" type="audio/ogg">
+                    <source src="sound/flap.mp3" type="audio/mp3">
+                </audio>
+                <audio id="ting">
+                    <source src="sound/ting.ogg" type="audio/ogg">
+                    <source src="sound/ting.mp3" type="audio/mp3">
+                </audio>
+                <canvas id="game_bg"></canvas>
+                <canvas id="game_main"></canvas>
+                    <div id="score_board">0</div>
+                    <div id="invincible_timer">
+                        <div id="invincible_loader"></div>
+                    </div>
+                    <a href="javascript:void(0)" id="mute"></a>
+                    <!-- Loading Screen -->
+                    <div id="loading">
+                        <p id="loadText">Loading...</p>
+                        <div id="barCont">
+                            <div id="bar"></div>
+                        </div>
+                    </div>
+                    <div id="fps_count"></div>
+                    <div class="docs">
+                        <h3>How to play</h3>
+                        <p>
+                            You are an octocat in the game (specifically a <a href="https://octodex.github.com/jetpacktocat/" target="blank">Jetpacktocat</a>),
+                            a little character. You need to <strong>click the mouse</strong>, press the <kbd class="btn btn-sm"><span class="octicon octicon-arrow-small-up"></span></kbd> key, or tap (touch screen devices)
+                            to levitate, otherwise the octocat will descend. If she hits the top or bottom boundaries that'll end the game.
+                        </p>
+                        <p>
+                            There will be some obstacles along the way like <strong>forks</strong> (<span class="octicon octicon-repo-forked"></span>), <strong>branches</strong> (<span class="octicon octicon-git-branch"></span>)
+                            and some <strong>enemies</strong> (<span class="octicon octicon-issue-opened"></span>) who are also known as <em>pakias</em>.
+                            There are 3 types of pakias (which are actually other octocats as well):
+
+                            <ul>
+                                <li>sad (pull you)</li>
+                                <li>happy (push you)</li>
+                                <li>angry (kill you)</li>
+                            </ul>
+
+                            Keep safe distance from them (especially from the angry ones)!
+                        </p>
+                        <p>
+                            There are some collectibles too! Coins for points (yellow for 50,
+                            pink for 100, red for 500). <a href="https://octodex.github.com/topguntocat/">Topguntocat</a>s for invincibility
+                            for a short period. <a href="https://octodex.github.com/socialite/">Socialite</a> cats will spawn clones that'll destroy
+                            anything that comes in their way!
+                        </p>
+                        <p>
+                            Hit the <kbd class="btn btn-sm">Enter</kbd> or <kbd class="btn btn-sm">Spacebar</kbd> keys to (re)start the game.
+                        </p>
+                        <h3>About</h3>
+                        <p>
+                            This HTML5 Game (OctoPakia) has been happily <em>changed</em> for
+                            the <a href="https://github.com/blog/1972-the-game-has-changed">Github's Game Off 2015 (<em>The Game Has Changed</em>)</a>.
+                        </p>
+
+                        <h3>Credits</h3>
+                        <p>
+                            This game was initially named <em>Pappu Pakia</em> and it was created by <a href="https://twitter.com/_rishabhp">Rishabh</a> and <a href="https://twitter.com/solitarydesigns">Kushagra</a>.
+                            Thanks to <a href="http://rezoner.net/">Rezoner</a> for Music.
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/IonicaBizau">IonicaBizau</a> changed it by replacing the sprites into <a href="http://octodex.github.com">Octocats designed by GitHubbers</a>. Also the
+                            interface was enchated by using <a href="http://primercss.io/">Primer</a> and <a href="https://octicons.github.com/">Octicons</a>.
+                        </p>
+                        <p>
+                            All other sounds produced by personal thingies like mouths, hands and books.
+                            Some tricks and tips that we learnt while making this game
+                            has been shared on <a href="http://codetheory.in">CodeTheory</a>
+                            and <a href="http://cssdeck.com/codecasts">CSSDeck</a>.
+                        </p>
+
+                        <hr>
+
+                        <p class="text-center">
+                            <a class="btn" href="http://github.com/IonicaBizau/octo-pakia"><span class="octicon octicon-mark-github"></span> Code on Github</a>
+                            <a class="btn" href="http://github.com/mindd-it/pappu-pakia"><span class="octicon octicon-repo"></span> Original repository (Pappu Pakia)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script>window.mit = window.mit || {};</script>
+        <script src="js/utils.js"></script>
+        <script src="js/backgrounds.js"></script>
+        <script src="js/forks.js"></script>
+        <script src="js/branches.js"></script>
+        <script src="js/collectibles.js"></script>
+        <script src="js/pappu.js"></script>
+        <script src="js/pakia.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/loader.js"></script>
+    </body>
+</html>

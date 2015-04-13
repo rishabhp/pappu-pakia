@@ -71,6 +71,9 @@ mit.main = function() {
     canvas.height = canvas.width * 500/1000;
   }
 
+  $(".docs").css("top", canvas.height + 10);
+
+
   // BG Canvas
   var bg_canvas = document.querySelector('#game_bg');
   var bg_ctx = bg_canvas.getContext('2d');
@@ -80,7 +83,7 @@ mit.main = function() {
 
   var music = document.getElementById("start");
   music.volume = 0.2;
-  
+
   var isMute = false;
 
   // Mute the game if button is clicked
@@ -198,7 +201,7 @@ mit.main = function() {
 
   // Velocity cap on either sides of the
   // number system.
-  // 
+  //
   // You can console.log velocities in drawing methods
   // and from there decide what to set as the cap.
   mit.v_cap = 6.5;
@@ -268,7 +271,7 @@ mit.main = function() {
     // Space || Enter
     if (e.keyCode === 32 || e.keyCode === 13) {
       startGame();
-      
+
       e.preventDefault();
     }
 
@@ -325,7 +328,7 @@ mit.main = function() {
     // Share
     var tweet = document.getElementById("tweet");
     tweet.href='http://twitter.com/share?url=http://khele.in/pappu-pakia/&text=I just scored ' +Math.floor(mit.score)+ ' points in Pappu Pakia!&count=horiztonal&via=_rishabhp&related=solitarydesigns';
-  
+
     var facebook = document.getElementById("fb");
     facebook.href='http://facebook.com/sharer.php?s=100&p[url]=http://khele.in/pappu-pakia/&p[title]=I just scored ' +Math.floor(mit.score)+ ' points in the Pappu Pakia!';
 
@@ -420,7 +423,7 @@ mit.main = function() {
 
       // Acceleration + Gravity
       // mit.ay = mit.ay + mit.gravity;
-      
+
       // Velocity
       if (!mit.game_over) {
         if (
@@ -428,12 +431,10 @@ mit.main = function() {
           (mit.vy > -mit.v_cap && mit.ay+mit.gravity < 0)
           ) {
 
-          // console.log(mit.ay);
           mit.vy += mit.ay;
           mit.vy += mit.gravity;
         }
 
-        // console.log(vy, ay)
 
         mit.Pappu.x += mit.vx;
         mit.Pappu.y += mit.vy;
@@ -447,7 +448,7 @@ mit.main = function() {
         mit.vy += mit.gravity;
         mit.Pappu.y += mit.vy;
       }
-    
+
       mit.Pappu.draw(ctx);
     }
     else {

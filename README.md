@@ -1,51 +1,37 @@
-# Pappu Pakia
+![Octo Pakia](http://i.imgur.com/MeEBu1E.png)
 
-![Pappu Pakia](http://i.imgur.com/zYD37.png)
+# Octo Pakia
 
-This HTML5 Game (Pappu Pakia) has been happily made for the
-[Github Game Off 2012](https://github.com/blog/1303-github-game-off).
+[![Octo Pakia](http://i.imgur.com/pTQVPRl.jpg)](http://ionicabizau.github.io/octo-pakia/)
 
-**[PLAY THE GAME HERE](http://khele.in/pappu-pakia/)**
+<center>
+[<kbd>Click here to play the game</kbd>](http://ionicabizau.github.io/octo-pakia/)
+</center>
 
-## Credits
+### How to play
 
-Handsomely coded by [Rishabh](http://twitter.com/_rishabhp).
-Beautiful graphics by [Kushagra](http://twitter.com/solitarydesigns).
+You are an octocat in the game (specifically a [Jetpacktocat](https://octodex.github.com/jetpacktocat/)), a little character. You need to **click the mouse**, press the  key, or tap (touch screen devices) to levitate, otherwise the octocat will descend. If she hits the top or bottom boundaries that'll end the game.
 
-## Sharing is Caring <3
+There will be some obstacles along the way like **forks**, **branches** and some **enemies** who are also known as _pakias_. There are 3 types of pakias (which are actually other octocats as well):
 
-Some tricks and tips that we learnt while making this game has been
-shared on [CodeTheory](http://codetheory.in) and
-[CSSDeck](http://cssdeck.com/codecasts).
+ * sad (pull you)
+ * happy (push you)
+ * angry (kill you)
 
-## Game Libraries Used
+Keep safe distance from them (especially from the angry ones)!
 
-No Gaming/Physics Libraries/Frameworks used. All Custom Code and Custom Physics.
-Only jQuery used for quick and few DOM manipulations.
+There are some collectibles too! Coins for points (yellow for 50, pink for 100, red for 500). [Topguntocat](https://octodex.github.com/topguntocat/)s for invincibility for a short period. [Socialite](https://octodex.github.com/socialite/) cats will spawn clones that'll destroy anything that comes in their way!
 
-## About
+Hit the <kbd class="btn btn-sm">Enter</kbd> or <kbd class="btn btn-sm">Spacebar</kbd> keys to (re)start the game.
 
-Based on the compo's rules, the concepts
-that we tried to incorporate are fork, branch, push, pull, clone.
+### About
 
-You are pappu in the game, a little character. You need to
-click the mouse or tap (touch screen) to levitate else
-pappu will descend. If he hits the top or bottom boundaries
-that'll end the game.
+This HTML5 Game (OctoPakia) has been happily _changed_ for the [Github's Game Off 2015 (_The Game Has Changed_)](https://github.com/blog/1972-the-game-has-changed).
 
-There will be some obstacles along the way like forks, branches
-and some enemies who are also known as "pakias". Hitting them
-will end the game. 3 types of pakias - sad (pull you),
-happy (push you), angry (kill you). Keep safe distance from
-them!
+### Credits
 
-There are some collectibles too! Coins for points (yellow for 50,
-pink for 100, red for 500, blue for 1000). Stars for invincibility
-for a short period. Berries spawning clones that'll destroy
-anything that comes in their way!
+This game was initially named _Pappu Pakia_ and it was created by [Rishabh](https://twitter.com/_rishabhp) and [Kushagra](https://twitter.com/solitarydesigns). Thanks to [Rezoner](http://rezoner.net/) for Music.
 
-Collisions are not super strict to make the gameplay a little less harder.
+[IonicaBizau](https://twitter.com/IonicaBizau) changed it by replacing the sprites into [Octocats designed by GitHubbers](http://octodex.github.com). Also the interface was enchated by using [Primer](http://primercss.io/) and [Octicons](https://octicons.github.com/).
 
-No Libraries/Frameworks used. All Custom Code and Custom Physics.
-
-Hit Enter or Spacebar keys to (re)start the game.
+All other sounds produced by personal thingies like mouths, hands and books. Some tricks and tips that we learnt while making this game has been shared on [CodeTheory](http://codetheory.in) and [CSSDeck](http://cssdeck.com/codecasts).

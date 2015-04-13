@@ -10,7 +10,7 @@
 
   - One for pappu's invincibility
   */
-  
+
   mit.Collectible = function() {
 
     // x/y pos
@@ -197,11 +197,22 @@
         collec.x = pos.x;
         collec.y = pos.y;
 
-        collec.w = 30;
-        collec.h = 30;
-
         // Type
         collec.type = this.types[utils.randomNumber(0, this.types.length-1)];
+        switch (collec.type) {
+            case "coin":
+                collec.w = 30;
+                collec.h = 30;
+                break;
+            case "clone":
+                collec.w = mit.image.berries.width;
+                collec.h = mit.image.berries.height;
+                break;
+            case "invincible":
+                collec.w = mit.image.star.width;
+                collec.h = mit.image.star.height;
+                break;
+        }
 
         // Choosing Sub types if any
         sub_types = this.sub_types[collec.type];
