@@ -1,0 +1,335 @@
+body {
+  font-family: RobotoDraft, sans-serif;
+  color: #333;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+section {
+  margin: 20px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+core-toolbar {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  
+#greeting {
+  background-color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  margin: 15px;
+}
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
+paper-button {
+  margin: 0.5em 1em 0.5em 0;
+  width: 10em;
+}
+
+paper-button[right] {
+  position: fixed;
+  right: 0;
+}
+
+paper-checkbox {
+  margin-left: 1em;
+}
+
+paper-fab {
+  position: absolute !important;
+  top: 35px;
+  right: 1em;
+  z-index: 1;
+}
+
+paper-tabs {
+  background-color: #5677fc;
+  color: #fff;
+}
+
+paper-tabs[noink][nobar] paper-tab.core-selected {
+  color: #ffff8d;
+}
+
+#greeting {
+  background-color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  margin: 15px;
+}
+
+
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+
+    paper-checkbox {
+      padding: 20px 20px 20px 0;
+    }
+
+    section {
+      width: 300px;
+    }
+
+    paper-checkbox.blue::shadow #ink[checked] {
+      color: #4285f4;
+    }
+
+    paper-checkbox.blue::shadow #checkbox.checked {
+      border-color: #4285f4;
+    }
+
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+      margin: 0;
+      padding: 24px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 20px;
+    }
+
+    paper-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    html /deep/ core-collapse {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    .constrained-height {
+      height: 150px;
+    }
+
+    .colored {
+      color: #ff0000;
+    }
+
+    .dropdown.colored::shadow #ripple,
+    .dropdown.colored::shadow #background {
+      border: 1px solid #ff0000;
+      background-color: #000000;
+    }
+
+
+      body {
+        font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+        font-size: 14px;
+        margin: 0;
+        padding: 24px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+      }
+
+      section {
+        padding: 20px 0;
+      }
+
+      section > div {
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      paper-icon-button {
+        vertical-align: middle;
+      }
+
+      paper-icon-button.hover:hover {
+        background: #eee;
+        border-radius: 50%;
+      }
+
+      paper-icon-button.red {
+        color: #fe774d;
+      }
+
+      paper-icon-button.blueRipple::shadow #ripple {
+        color: #4285f4;
+      }
+
+      paper-icon-button.huge::shadow #icon {
+        width: 100px;
+        height: 100px;
+      }
+
+/*      core-selector paper-icon-button:not([active])::shadow core-icon {
+        color: #c9c9c9;
+      }
+*/
+      paper-icon-button.custom {
+        color: #a9edff;
+      }
+
+         
+#killaz {
+  background-color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  margin: 15px;
+}
+
+
+     body unresolved{
+       background-color:black;
+        background-color:000000;
+         font-family:acme;
+          margin:20px;
+           padding:14px;
+       
+     }
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.pink::shadow #activeProgress {
+      background-color: #e91e63;
+    }
+    
+    paper-progress.pink::shadow #secondaryProgress {
+      background-color: #f8bbd0;
+    }
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.pink::shadow #activeProgress {
+      background-color: #e91e63;
+    }
+    
+    paper-progress.pink::shadow #secondaryProgress {
+      background-color: #f8bbd0;
+    }
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.red::shadow #activeProgress {
+      background-color: #ff0000;
+    }
+    
+    paper-progress.red::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+    
+
+ 
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.black::shadow #activeProgress {
+      background-color: #000000;
+    }
+    
+    paper-progress.black::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+   body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.blue::shadow #activeProgress {
+      background-color: #0000ff;
+    }
+    
+    paper-progress.blue::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+  paper-spinner.blue::shadow .circle {
+    border-color: #0000ff;
+  }
+
+  paper-spinner.red::shadow .circle {
+    border-color: #ff0000;
+  }
+
+  paper-spinner.yellow::shadow .circle {
+    border-color: #f4b400;
+  }
+
+  paper-spinner.green::shadow .circle {
+    border-color: #00ff00;
+  }
+      paper-spinner.black::shadow .circle {
+    border-color: #000000;
+  }
+
+
+
