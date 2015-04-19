@@ -1,0 +1,1 @@
+window.mit = window.mit || {};
