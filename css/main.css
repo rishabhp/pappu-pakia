@@ -359,3 +359,652 @@ div.chrome-button a {
 	background-image: linear-gradient(top, #5587da, #4d7cd6);
 	box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.4);
 }
+ 
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.pink::shadow #activeProgress {
+      background-color: #e91e63;
+    }
+    
+    paper-progress.pink::shadow #secondaryProgress {
+      background-color: #f8bbd0;
+    }
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.red::shadow #activeProgress {
+      background-color: #ff0000;
+    }
+    
+    paper-progress.red::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+    
+  </style>
+  
+    <style shim-shadowdom>
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.black::shadow #activeProgress {
+      background-color: #000000;
+    }
+    
+    paper-progress.black::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+    
+  </style>
+    
+    <style shim-shadowdom>
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.blue::shadow #activeProgress {
+      background-color: #0000ff;
+    }
+    
+    paper-progress.blue::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+      paper-spinner.blue::shadow .circle {
+    border-color: #0000ff;
+  }
+
+  paper-spinner.red::shadow .circle {
+    border-color: #ff0000;
+  }
+
+  paper-spinner.yellow::shadow .circle {
+    border-color: #f4b400;
+  }
+
+  paper-spinner.green::shadow .circle {
+    border-color: #00ff00;
+  }
+      paper-spinner.black::shadow .circle {
+    border-color: #000000;
+  }
+#greeting {
+  background-color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  margin: 15px;
+}
+
+body.open {
+  overflow: hidden;
+}
+
+.app-bar {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow: hidden;
+  z-index: 1;
+}
+
+body {
+  font-family: RobotoDraft, sans-serif;
+  color: #ffffff;
+  margin: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+section {
+  margin: 20px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+core-toolbar {
+  background-color: #0000ff;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
+paper-button {
+  margin: 0.5em 1em 0.5em 0;
+  width: 10em;
+}
+
+paper-button[right] {
+  position: fixed;
+  right: 0;
+}
+
+paper-checkbox {
+  margin-left: 1em;
+}
+
+paper-fab {
+  position: absolute !important;
+  top: 35px;
+  right: 1em;
+  z-index: 1;
+}
+
+paper-tabs {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+paper-tabs[noink][nobar] paper-tab.core-selected {
+  color: #0000ff;
+}
+ core-item.core-selected {
+    color: red;
+  }
+      paper-tabs.pink::shadow #selectionBar {
+      background-color: #ff4081;
+    }
+
+    paper-tabs.pink paper-tab::shadow #ink {
+      color: #ff4081;
+    }
+       paper-toggle-button::shadow paper-radio-button::shadow #ink[checked] {
+      color: #4285f4;
+    }
+
+    paper-toggle-button::shadow paper-radio-button::shadow #onRadio {
+      background-color: #4285f4;
+    }
+
+    paper-toggle-button::shadow #toggleBar[checked] {
+      background-color: #4285f4;
+    }
+
+    paper-toggle-button::shadow paper-radio-button::shadow #ink {
+      color: #b5b5b5;
+    }
+       paper-toggle-button::shadow paper-radio-button::shadow #offRadio {
+      border-color: #b5b5b5;
+    }
+
+    paper-toggle-button::shadow #toggleBar {
+      background-color: red;
+    }
+       paper-toggle-button::shadow #toggleBar[checked] {
+      background-color: #ff0000;
+    }
+
+    paper-toggle-button::shadow paper-radio-button::shadow #ink {
+      color: #ff0000;
+    }
+        paper-toggle-button::shadow paper-radio-button::shadow #ink[checked] {
+      color: #ff0000;
+    }
+        paper-toggle-button::shadow paper-radio-button::shadow #onRadio {
+      background-color: #ff0000;
+    }
+        #my-button::shadow #ripple {
+      color: red;
+    }
+        #my-button {
+        background: black;
+        color:red;
+        }
+
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    html /deep/ core-dropdown {
+      background-color: #eee;
+      color: #000;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 8px;
+    }
+
+    .with-margin {
+      margin: 12px;
+    }
+
+    .open-below {
+      top: 38px;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    paper-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    html /deep/ core-collapse {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    .constrained-height {
+      height: 150px;
+    }
+
+    .colored {
+      color: #0000ff;
+    }
+
+    .dropdown.colored::shadow #ripple,
+    .dropdown.colored::shadow #background {
+      border: 1px solid #0000ff;
+      background-color: #ffffff;
+    }
+    	<style type="text/css">
+	#map {
+		width: 1100px;
+		height: 700px;
+		border: 1px solid #ccc;
+	}
+	 body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+      margin: 0;
+      padding: 24px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    paper-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    html /deep/ core-collapse {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    .constrained-height {
+      height: 150px;
+    }
+
+    .colored {
+      color: #0000ff;
+    }
+
+    .dropdown.colored::shadow #ripple,
+    .dropdown.colored::shadow #background {
+      border: 1px solid #0000ff;
+      background-color: #ffffff;
+    }
+
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+      margin: 0;
+      padding: 24px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    paper-input {
+      width: 80%;
+    }
+
+    paper-input-decorator {
+      max-width: 80%;
+    }
+
+    paper-input.narrow {
+      width: 150px;
+    }
+
+    .custom /deep/ ::-webkit-input-placeholder {
+      color: #f4b400;
+    }
+
+    .custom /deep/ ::-moz-placeholder {
+      color: #f4b400;
+    }
+
+    .custom /deep/ :-ms-input-placeholder {
+      color: #f4b400;
+    }
+
+    .custom /deep/ .label-text,
+    .custom /deep/ .error {
+      color: #f4b400;
+    }
+
+    .custom /deep/ .unfocused-underline {
+      background-color: #f4b400;
+    }
+
+    .custom[focused] /deep/ .floated-label .label-text {
+      color: #0f9d58;
+    }
+
+    .custom /deep/ .focused-underline {
+      background-color: #0f9d58;
+    }
+
+    .custom.invalid /deep/ .floated-label .label-text,
+    .custom /deep/ .error {
+      color: #f06292;
+    }
+
+    .custom.invalid /deep/ .focused-underline {
+      background-color: #f06292;
+    }
+
+    .custom {
+      color: #1a237e;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 16px;
+      margin: 20px;
+    }
+
+    core-item {
+      width: 300px;
+    }
+
+    core-item.big {
+      font-size: 24px;
+    }
+
+    core-item.small {
+      font-size: 12px;
+    }
+
+    core-item.contact-item {
+      height: 50px;
+      background-color: #efefef;
+      border: 1px solid #ddd;
+    }
+
+    core-item.contact-item .name {
+      font-size: 1.125em;
+    }
+
+    core-item.contact-item .address {
+      font-size: 0.75em;
+    }
+
+        /* Button */
+    .button {
+      display: inline-block;
+      position: relative;
+      width: 120px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 2px;
+      font-size: 0.9em;
+      background-color: #fff;
+      color: #646464;
+    }
+    
+    .button > paper-ripple {
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    
+    .button.narrow {
+      width: 60px;
+    }
+    
+    .button.grey {
+      background-color: #eee;
+    }
+    
+    .button.blue {
+      background-color: #4285f4;
+      color: #fff;
+    }
+    
+    .button.green {
+      background-color: #0f9d58;
+      color: #fff;
+    }
+    
+    .button.raised {
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+    
+    .button.raised:active {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      transition-delay: 0s;
+    }
+    
+    /* Icon Button */
+    .icon-button {
+      position: relative;
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+    }
+    
+    .icon-button > core-icon {
+      margin: 16px;
+      transition: -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .icon-button:hover > core-icon {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    
+    .icon-button > paper-ripple {
+      overflow: hidden;
+      color: #646464;
+    }
+    
+    .icon-button.red > core-icon::shadow path {
+      fill: #db4437;
+    }
+    
+    .icon-button.red > paper-ripple {
+      color: #db4437;
+    }
+    
+    .icon-button.blue > core-icon::shadow path {
+      fill: #4285f4;
+    }
+    
+    .icon-button.blue > paper-ripple {
+      color: #4285f4;
+    }
+    
+    /* FAB */
+    .fab {
+      position: relative;
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      color: #fff;
+      overflow: hidden;
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+    
+    .fab.red {
+      background-color: #d23f31;
+    }
+    
+    .fab.blue {
+      background-color: #4285f4;
+    }
+    
+    .fab.green {
+      background-color: #0f9d58;
+    }
+    
+    .fab:active {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      transition-delay: 0s;
+    }
+    
+    .fab > core-icon {
+      margin: 16px;
+    }
+    
+    .fab > core-icon::shadow path {
+      fill: #fff;
+    }
+    
+    /* Menu */
+    .menu {
+      display: inline-block;
+      width: 180px;
+      background-color: #fff;
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .item {
+      position: relative;
+      height: 48px;
+      line-height: 48px;
+      color: #646464;
+      font-size: 0.9em;
+    }
+    
+    .menu.blue > .item {
+      color: #4285f4;
+    }
+    
+    /* Card, Dialog */
+    .card, .dialog {
+      position: relative;
+      display: inline-block;
+      width: 300px;
+      height: 240px;
+      vertical-align: top;
+      background-color: #fff;
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    }
+    
+    .dialog {
+      box-sizing: border-box;
+      padding: 16px;
+    }
+    
+    .dialog > .content {
+      height: 170px;
+      font-size: 0.9em;
+    }
+    
+    .dialog > .content > .title {
+      font-size: 1.3em;
+    }
+    
+    .dialog > .button {
+      width: 90px;
+      float: right;
+    }
+    
+    .card.image {
+      background: url(http://lorempixel.com/300/240/nature/);
+      color: #fff;
+    }
+    
+    /* Misc */
+    .center {
+      text-align: center;
+    }
+    
+    .label {
+      padding: 0 16px;
+    }
+    
+    .label-blue {
+      color: #4285f4; 
+    }
+    
+    .label-red {
+      color: #d23f31; 
+    }
+    
+
+
