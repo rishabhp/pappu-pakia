@@ -1,0 +1,1366 @@
+<!doctype html>
+
+<html lang="en">
+  
+  <head>
+    
+    <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <title style="font-family:acme;color:black;">
+    SRV Games
+    </title>
+    
+      <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="images/touch/icon-128x128.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+
+		<meta name="description" content="STT" />
+		<meta name="keywords" content="SRV" />
+		<meta name="author" content="SHAZEEL" />
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- build:css styles/components/main.min.css -->
+    <link rel="stylesheet" href="styles/h5bp.css">
+    <link rel="stylesheet" href="styles/components/components.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- core build building the core main style functions such as paper fab and tabs -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+  <link rel="import" href="bower_components/core-icons/core-icons.html">
+  <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="bower_components/font-roboto/roboto.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="bower_components/paper-toast/paper-toast.html">
+  <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="bower_components/paper-progress/paper-progress.html">
+  <link rel="import" href="bower_components/paper-spinner/paper-spinner.html">
+  <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-slider/paper-slider.html">
+  <link rel="import" href="bower_components/paper-menu-buton/paper-menu-button.html">
+  <link rel="import" href="bower_components/paper-dropdown/paper-dropdown.html">
+  <link rel="import" href="bower_components/core-dropdown/core-dropdown.html">
+  <link rel="impoer" href="bower_components/core-focusable/core-focusable.html">
+  <link rel="import" href="bower_components/paper-radio-button/paper-radio-button.html">
+  <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
+  <link rel="import" href="bower_componens/core-a11y-keys/core-a1y-keys.html">
+  <link rel="import" href="bower_components/core-animation/core-animation.html">
+  <link rel="import" href="bower_components/core-input/core-input.html">
+  <link rel="import" href="bower_components/core-icon/core-icon.html">
+  <link rel="import" href="bower_components/core-icons/hardware-icons.html">
+  <link rel="import" href="bower_components/core-meta/core-meta.html">
+  <link rel="import" href="bower_components/core-menu/core-menu.html">
+  <link rel="import" href="bower_components/paper-input/paper-input-decorator.html">
+  <link rel="import" href="bower_components/paper-dialog/paper-action-dialog.html">
+  <link rel="import" href="bower_components/paper-toggle-button/paper-toggle-button.html">
+  <link rel="import" href="bower_components/core-a11y-keys/core-a11y-keys.html">
+  <link rel="import" href="bower_components/core-meta/core-meta.html">
+  <link rel="import" href="bower_components/paper-spinner/paper-spinner.html">
+  <link rel="import" href="bower-components/paper-progress/paper-progress.html">
+  <link rel="import" href="bower_components/core-animation/core-animation.html">
+  <link rel="1mport" href="bower_components/core-icon/core-icon.html">
+  <link rel="import" href="bower_components/core-icons/core-icons.html">
+  <link rel="import" href="bower_component/core-animation/core-animation-group.html">
+  <link rel="import" href="bower_components/paper-menu-button/paper-menu-button.html">
+  <link rel="import" href="bower_components/core-animaton/core-animation.html">
+  <link rel="import" href="bower_components/paper-toggle-button/paper-toggle-button.html">
+  
+  
+    <!-- load default set -->
+  <link rel="import" href="bower_components/core-icons/core-icons.html">
+  <!-- load the rest -->
+  <link rel="import" href="bower_components/core-icons/av-icons.html">
+  <link rel="import" href="bower_components/core-icons/communication-icons.html">
+  <link rel="import" href="bower_components/core-icons/device-icons.html">
+  <link rel="import" href="bower_components/core-icons/editor-icons.html">
+  <link rel="import" href="bower_components/core-icons/hardware-icons.html">
+  <link rel="import" href="bower_components/core-icons/image-icons.html">
+  <link rel="import" href="bower_components/core-icons/maps-icons.html">
+  <link rel="import" href="bower_components/core-icons/notification-icons.html">
+  <link rel="import" href="bower_components/core-icons/social-icons.html">
+    
+
+
+
+  <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="styles.css">
+    
+    
+      <script>
+      // Service workers require HTTPS (http://goo.gl/lq4gCo). If we're running on a real web server
+      // (as opposed to localhost on a custom port, which is whitelisted), then change the protocol to HTTPS.
+      if ((!location.port || location.port == "80") && location.protocol != 'https:') {
+        location.protocol = 'https:';
+      }
+      </script>
+
+       <link rel="stylesheet" href="../../styles/main.css">
+
+    
+          <!-- 100 % -->
+         
+        
+  <style shim-shadowdom="">
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.pink::shadow #activeProgress {
+      background-color: #e91e63;
+    }
+    
+    paper-progress.pink::shadow #secondaryProgress {
+      background-color: #f8bbd0;
+    }
+    
+  </style>
+  
+  <!-- end of shadow dom-->
+    <!-- end of plymer -->
+      <!-- end of ai shdow dom style -->
+  
+  <!-- run the exe or bat file -->
+    <!-- start -->
+  
+  <script type="text/javascript">
+    function runapp(which) {
+      WshShell = new
+      ActiveXObject("WScript.Shell");
+       WshShell.Run (which, 1, true);
+    }
+   </script>
+  
+  <!-- end -->
+   <!-- end of code 101 exe and bat -->
+  
+  <!-- polymer 2 -->
+    <!-- satrt of polymer 2 -->
+  
+      
+  <style shim-shadowdom>
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.pink::shadow #activeProgress {
+      background-color: #e91e63;
+    }
+    
+    paper-progress.pink::shadow #secondaryProgress {
+      background-color: #f8bbd0;
+    }
+    
+  </style>
+  
+  <!-- end -->
+   
+  <!-- polymer 2 -->
+    <!-- satrt of polymer 2 -->
+  
+      
+  <style shim-shadowdom>
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.red::shadow #activeProgress {
+      background-color: #ff0000;
+    }
+    
+    paper-progress.red::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+    
+  </style>
+  
+    <style shim-shadowdom>
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.black::shadow #activeProgress {
+      background-color: #000000;
+    }
+    
+    paper-progress.black::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+    
+  </style>
+    
+    <style shim-shadowdom>
+  
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+      padding: 24px;
+    }
+    
+    paper-progress {
+      display: block;
+      width: 100%;
+      padding: 25px 0;
+    }
+    
+    paper-progress.blue::shadow #activeProgress {
+      background-color: #0000ff;
+    }
+    
+    paper-progress.blue::shadow #secondaryProgress {
+      background-color: #000000;
+    }
+    
+  </style>
+  
+  
+  <!-- end -->
+  <!-- end of polymer 2 -->
+  
+  <!-- paper-spinner-->
+  <!-- start style shimshadow-dom -->
+  <!-- start -->
+
+    <style shim-shadowdom="">
+  paper-spinner.blue::shadow .circle {
+    border-color: #0000ff;
+  }
+
+  paper-spinner.red::shadow .circle {
+    border-color: #ff0000;
+  }
+
+  paper-spinner.yellow::shadow .circle {
+    border-color: #f4b400;
+  }
+
+  paper-spinner.green::shadow .circle {
+    border-color: #00ff00;
+  }
+      paper-spinner.black::shadow .circle {
+    border-color: #000000;
+  }
+  </style>
+  
+  <!-- end -->
+  <!-- end of shimshadow-dom -->
+  
+    <style shim-shadowdom="">
+
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+      margin: 0;
+      padding: 24px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    html /deep/ core-icon {
+      height: 43px;
+      width: 43px;
+    }
+
+    #target {
+      display: inline-block;
+      font-size: 28px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+
+  </style>
+
+  
+  <!-- end of paper-spinner -->
+  <!-- end of polymer 2 -->
+  
+
+
+  <style shim-shadowdom>
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 14px;
+      margin: 0;
+      padding: 24px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+
+    section {
+      padding: 20px 0;
+    }
+
+    section > div {
+      padding: 14px;
+      font-size: 16px;
+    }
+
+    paper-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    html /deep/ core-collapse {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    .constrained-height {
+      height: 150px;
+    }
+
+    .colored {
+      color: #0000ff;
+    }
+
+    .dropdown.colored::shadow #ripple,
+    .dropdown.colored::shadow #background {
+      border: 1px solid #0000ff;
+      background-color: #ffffff;
+    }
+
+  </style>
+    
+  </head>
+  
+  <body unresolved="" style="background-color:black;">
+    
+    <!-- start front section -->
+    <!-- start -->
+    
+    
+<!-- start of shadow dom div id greeting .js -->
+    
+      <!-- core tool bar -->
+         <core-toolbar>
+          <paper-spinner active="" class="black"></paper-spinner>
+
+<section>
+
+      <paper-menu-button>
+        <paper-menu-button label="colored">
+          <core-icon icon="add" class="colored"></core-icon>
+          <span style="font-family:acme;color:black;size:19px;">
+            SRV_GAMES
+          </span>
+        </paper-menu-button>
+        <paper-dropdown class="dropdown colored">
+          <core-menu class="menu">
+            <template repeat="{{pastries}}">
+              <paper-item>{{}}</paper-item>
+            </template>
+          </core-menu>
+        </paper-dropdown>
+      </paper-menu-button>
+  
+</section>
+
+<!-- script -->
+<script src="main.js"></script>
+           <!-- script -->
+
+           <a href="https://shazeel.weebly.com" target="_blank">
+          <paper-icon-button icon="polymer" title="My WebSite" style="font-family:acme;color:black;"></paper-icon-button>
+        </a>
+
+           <a href="https://twitter.com/shazeel velji" style="font-family:acme;" >
+                    <paper-button style="font-family:acme;color:black;">
+                   <core-icon icon="favorite" style="color:red;"></core-icon>
+                  fav
+                 </paper-button>
+                      </a>
+                <paper-fab icon="add"></paper-fab>
+               <paper-progress value="100" class="black"></paper-progress>
+              <input is="core-input">
+             <paper-ripple></paper-ripple>
+          <paper-spinner active="" class="black"></paper-spinner>
+         </core-toolbar>
+
+<!-- end of core -->
+<!-- paper ptogress interup scripts n started @ 1100 -->
+    
+    <paper-progress class="blue" value="100"></paper-progress>
+    
+      <!-- prb end -->
+    
+    <paper-spinner active="" class="green"></paper-spinner>
+    
+            <paper-radio-button></paper-radio-button>
+    
+    <!-- end -->
+    <!-- end of front-section -->
+    
+          <!-- start -->
+          <!-- authorised acess ="root" -->
+
+  <paper-button raised="" onclick="startProgress();" style="font-family:acme;color:white;size:18px;">Re-load</paper-button>
+  
+  <br><br><br>
+    
+    <paper-slider min="100" max="300" value="190"></paper-slider>
+    
+        <paper-spinner active="" class="green"></paper-spinner>
+    
+    <paper-progress class="blue" value="100"></paper-progress>
+    
+    <!-- end -->
+            <!-- /end rb -->
+<!-- end of shadow-dom -->
+    
+    
+<!-- paper tabs -->
+            <h3 style="font-family:Acme;color:blue;">Navigation</h3>
+    
+            <!-- home-->
+         <h3 style="font-family:acme;color:blue;">HOME!</h3>
+           <paper-tabs selected="0" link>
+      <paper-tab>
+        <a href="index.html" horizontal center-center layout style="font-family:acme;color:white;size:25px;">HOME!</a>
+      </paper-tab>
+    </paper-tabs>
+<!-- home -->
+    
+            <!-- game 1 -->
+         <h3 style="font-family:acme;color:blue;">Play a bird game where you try directing your bird farthest without getting hit!</h3>
+           <paper-tabs selected="0" link>
+      <paper-tab>
+        <a href="srvpp.htm" horizontal center-center layout style="font-family:acme;color:white;size:25px;" style="font-family:acme;color:white;">SRV_Pappu_Pakia_Game</a>
+      </paper-tab>
+    </paper-tabs>
+<!-- game 1-->
+
+        <!-- game tic tac toe -->
+         <h3 style="font-family:acme;color:blue;">Play a tic tac toe game with a friend or online against another player!</h3>
+           <paper-tabs selected="0" link>
+      <paper-tab>
+        <a href="cl/index.html" horizontal center-center layout style="font-family:acme;color:white;size:25px;">Tic Tac Toe Game!</a>
+      </paper-tab>
+    </paper-tabs>
+<!-- end of tic tac toe game -->
+  
+  <paper-progress value="100" class="blue"></paper-progress><br>
+  
+  <!-- MID-SECTION -->
+  <!-- start -->
+    
+    
+    <paper-progress class="blue" value="100"></paper-progress> <br>
+    
+    <paper-spinner class="blue" active=""></paper-spinner>
+
+  <div style="font-family:acme;color:blue;size:23px;" id="greeting"></div>
+
+  <script>
+     window.onload = function() {
+  document.querySelector('#greeting').innerText =
+    'Hello, World! Welcome to SRV GAMES WEB APP! It is ' + new Date();
+
+ };
+
+  </script>
+    
+     <paper-spinner class="blue" active=""></paper-spinner>
+    
+<!-- end of greeting# -->
+    <paper-progress class="red" value="100"></paper-progress>
+    
+  <!-- paper act shadow dom -->
+    <paper-spinner active="" class="green"></paper-spinner>
+<!-- end of shadow-dom -->
+    
+<!-- service worker -->
+
+      <script>
+      // Service workers require HTTPS (http://goo.gl/lq4gCo). If we're running on a real web server
+      // (as opposed to localhost on a custom port, which is whitelisted), then change the protocol to HTTPS.
+      if ((!location.port || location.port == "80") && location.protocol != 'https:') {
+        location.protocol = 'https:';
+      }
+      </script>
+
+<h style="font-family:acme;color:white;">Status of service worker/net</h>
+    <div style="font-family:acme;color:white;" class="output">
+      <p style="font-family:acme;color:white;">service worker status: <strong id="status"></strong></p>
+    </div>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        // Override the default scope of '/' with './', so that the registration applies
+        // to the current directory and everything underneath it.
+        navigator.serviceWorker.register('service-worker.js', {scope: './'}).then(function(registration) {
+          // At this point, registration has taken place.
+          // The service worker will not handle requests until this page and any
+          // other instances of this page (in other tabs, etc.) have been
+          // closed/reloaded.
+          document.querySelector('#status').textContent = 'succeeded';
+        }).catch(function(error) {
+          // Something went wrong during registration. The service-worker.js file
+          // might be unavailable or contain a syntax error.
+          document.querySelector('#status').textContent = error;
+        });
+      } else {
+        // The current browser doesn't support service workers.
+        var aElement = document.createElement('a');
+        aElement.href = 'http://www.chromium.org/blink/serviceworker/service-worker-faq';
+        aElement.textContent = 'unavailable';
+        document.querySelector('#status').appendChild(aElement);
+      }
+    </script>
+<!-- end/ -->
+    <paper-pinner class="green" active=""></paper-pinner>
+
+<!-- reg -->
+    <div>
+  <h style="font-family:acme;color:white;">STATE</h>
+       <p style="font-family:acme;color:white;">State transitions of the service worker associated with the current registration:</p>
+    <ol style="font-family:acme;color:white;" id="states"></ol>
+  </div>
+
+  <script>
+    function logState(state) {
+      var liElement = document.createElement('li');
+      liElement.textContent = state;
+      document.querySelector('#states').appendChild(liElement);
+    }
+
+    if ('serviceWorker' in navigator) {
+      // The current browser supports service workers.
+      document.querySelector('#availability').innerText = 'are';
+
+      // navigator.serviceWorker.controlled iff there is currently a service worker handling
+      // requests on this page for the current navigation.
+      document.querySelector('#controlled').innerText = navigator.serviceWorker.controller ? 'is' : 'is not';
+
+      // Override the default scope of '/' with './', so that the registration applies
+      // to the current directory and everything underneath it.
+      navigator.serviceWorker.register('service-worker.js', {scope: './'}).then(function(registration) {
+        // At this point, registration has taken place.
+        // The service worker will not handle requests until this page and any
+        // other instances of this page (in other tabs, etc.) have been
+        // closed/reloaded.
+        document.querySelector('#register').textContent = 'succeeded';
+
+        var serviceWorker;
+        if (registration.installing) {
+          serviceWorker = registration.installing;
+          document.querySelector('#kind').textContent = 'installing';
+        } else if (registration.waiting) {
+          serviceWorker = registration.waiting;
+          document.querySelector('#kind').textContent = 'waiting';
+        } else if (registration.active) {
+          serviceWorker = registration.active;
+          document.querySelector('#kind').textContent = 'active';
+        }
+
+        if (serviceWorker) {
+          logState(serviceWorker.state);
+          serviceWorker.addEventListener('statechange', function(e) {
+            logState(e.target.state);
+          });
+        }
+      }).catch(function(error) {
+        // Something went wrong during registration. The service-worker.js file
+        // might be unavailable or contain a syntax error.
+        document.querySelector('#register').textContent = 'failed: ' + error;
+      });
+    } else {
+      // The current browser doesn't support service workers.
+      document.querySelector('#availability').innerText = 'are not';
+    }
+  </script>
+
+<!-- /end of reg -->
+    <!-- nave end -->
+
+    
+    <!-- end of greeting# -->
+     <!-- slider 2 -->
+     <p style="font-family:acme;color:blue;size:21px;">IO slider & health bar.</p>
+       <paper-slider min="10" max="200" value="110"></paper-slider>
+
+          <!-- i/o health -->
+           <paper-progress class="red" value="100"></paper-progress>
+           <!-- rb -->
+           
+  
+  
+  <!-- MID-SECTION -->
+  <!-- start -->
+  <!-- end -->
+  <!-- end of mid-section -->
+  
+    
+  <!-- script -->
+  <!-- satrt -->
+  
+  <script>
+    
+    var progress = document.querySelector('paper-progress');
+    var button = document.querySelector('paper-button');
+    
+    var repeat, maxRepeat = 1, animating = false;
+    
+    function nextProgress() {
+      animating = true;
+      if (progress.value < progress.max) {
+        progress.value += (progress.step || 1);
+      } else {
+        if (++repeat >= maxRepeat) {
+          animating = false;
+          button.disabled = false;
+          return;
+        }
+        progress.value = progress.min;
+      }
+      progress.async(nextProgress);
+    }
+    
+    function startProgress() {
+      repeat = 0;
+      progress.value = progress.min;
+      button.disabled = true;
+      if (!animating) {
+        nextProgress();
+      }
+    }
+    
+    addEventListener('polymer-ready', function() {
+      startProgress();
+    });
+    
+  </script> 
+  
+  <!-- end -->
+  <!-- end of script -->
+  
+  <!-- end -->
+  <!-- end of paper progress -->
+  
+<!-- end of ai -->
+  <!-- end root acess -->
+    
+    <!-- start of mid-section -->
+    <!-- start -->
+    
+    
+      <!-- PAPER CHARGER BATTERY STATUS -->
+     <paper-spinner class="green" active=""></paper-spinner>
+
+    <p style="font-family:a me;color:silver;"><a href="http://www.w3.org/TR/battery-status">Battery Status API</a> lets you monitor what is happening to the power of the device that your page is running on.</p>
+
+    <h2 style="font-family:acme;color:silver;">Battery Information</h2>
+
+    <div style="font-family:acme;color:red;"><span id="warning"></span></div>
+    <div style="font-family:acme;color:green;">Charging: <span id="chargingState"></span></div>
+    <div style="font-family:acme;color:orange;">Time to charge: <span id="chargingTime"></span></div>
+    <div style="font-family:acme;color:red;">Time to discharge: <span id="dischargeTime"></span></div>
+    <div style="font-family:acme;color:green;">Battery Level: <span id="level"></span></div>
+
+<!-- script src battery .js -->
+  <!-- // [START code-block] -->
+
+  <script src="scripts/battery.js"></script>
+    
+     <paper-spinner class="green" active=""></paper-spinner>
+
+<!-- // [END code-block] -->
+
+    <paper-progress class="blue" value="100"></paper-progress>
+
+<!-- script src end block code -->
+
+<!-- screen orientation -->
+
+    <h1 style="font-family:acme;color:white;">Screen Orientation </h1>
+
+    <p style="font-family:acme;color:white;">Screen Orientation API gives ability to read the screen orientation and lock it. It can be used to adapt the layout of a web app, e.g.
+    from vertical to horizontal grid. Can work on Android, IOS Apple, Windows 8, & more devices are supported..</p>
+
+    <p style="font-family:acme;color:white;">To read the current orientation of the screen, inspect the <code>orientation</code> property of the global <code>screen</code> object.</p>
+
+    <script>
+    /* // [START read-orientation] */
+      var log = document.createElement('pre')
+      log.innerText = 'Current orientation: ' + screen.orientation.type;
+      document.body.appendChild(log);
+    /* // [END read-orientation] */
+    </script>
+
+    <p style="font-famiy:acme;color:white;">It is possible to listen to the changes in screen orientation using the
+    <code>onchange</code> listener.</p>
+<!--
+    <pre>
+      screen.orientation.onchange = function() {
+        alert('Orientation changed! the current angle is ' +
+            screen.orientation.angle);
+      }
+    </pre>
+    -->
+
+    <script>
+
+    /* // [START listen-orientation] */
+      screen.orientation.onchange = function() {
+        alert('Orientation changed! the current angle is ' +
+            screen.orientation.angle);
+      }
+    /* // [END listen-orientation] */
+    </script>
+
+    <p style="font-family:acme;color:silver;">You can lock the orientation to a supported value
+      (landscape,
+      landscape-primary,
+      landscape-secondary,
+      portrait,
+      portrait-primary,
+      portrait-secondary,
+      natural).
+    Calling <code>screen.orientation.lock</code> returns a promise. The promise will be rejected if the device does not support the orientation lock.
+    </p>
+
+
+    <script>
+      var lock = function() {
+        /* // [START lock-orientation] */
+        // Page needs to be in a fullscreen mode for orientation lock to work.
+        document.body.webkitRequestFullScreen();
+        // Lock orientation.
+        screen.orientation.lock('landscape').then(
+          function() {
+            alert('Orientation locked!');
+          },
+          function(err) {
+            alert(err.message);
+            // E.g. "lockOrientation() is not available on this device"
+          }
+        );
+        /* // [END lock-orientation] */
+      };
+    </script>
+    <button style="font-family:acme;color:black;size:16px;" onclick="lock()">lock orientation</button>
+    
+    <paper-progress class="red" value="100"></paper-progress>
+
+<!-- end of screen orientation -->
+
+<!-- a informer block -->
+    
+     <paper-spinner class="blue" active=""></paper-spinner>
+    
+ <section class="styleguide__editorial-header">
+    <div class="editorial-header">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <p style="font-family:acme;color:white;"> / <a href="#ignore-click" class="breadcrumbs__link">NAVIGATION PANEL.</a> / <a href="https://shazeel.weebly.com" class="breadcrumbs__link"> My SITE.</a></p>
+            </nav>
+            <h1 style="font-family:acme;color:white;" class="tag editorial-header__title">THE SRV VOICE SPEECH TO TEXT APP!</h1>
+            <h2 style="font-family:acme;color:white;" class="editorial-header__subtitle">What is the srv voice to speech text app?</h2>
+            <p  style="font-family:acme;color:white;" class="editorial-header__excerpt g-wide--pull-1">This is an app which uses the users voice to contruct sentences by just using their voice! </p>
+            <p  style="font-family:acme;color:white;" class="g-wide--pull-1">Wait thats not all after the sentence or sentences have been wriiten by voice and you want to send it to a freind or colleague just click on the button 'send e-mail' and your default e-mail application will open and you just select the person you want to send this e-mail to and done the e-mail is sent! The app is below after the navigation panel !</p>
+            <div class="toc">
+                <p class="toc__title" style="font-family:acme;color:silver;">NAVIGATION</p>
+                <ol class="toc__list list-anchor" id="toc">
+                  <li style="font-family:acme;color:silver;"><a href="https://twitter.com/shazeel vleji" >Like us on Twitter!</a></li>
+                    <li style="font-family:acme;color:silver;" class="current"><a href="#ignore-click">Home.</a></li>
+                    <li style="font-family:acme;color:silver;"><a href="srvpp.htm">The SRV'S PAPPU PAKIA GAME !</a></li>
+                  <li style="font-family:acme;color:silver;"><a href="cl/index.html">Tic Tac Toe game!</a></li>
+                  <li style="font-family:acme;color:silver;"><a href="https://shazeel.weebly.com">Visit my web site!</a></li>
+                  <li style="font-family:acme;color:silver;"><a href="webplatform-samples/LICENSE">BY SHAZEEL (SRV)</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+    
+     <paper-spinner class="blue" active=""></paper-spinner>
+    
+<!-- /end of in4mer -->
+
+<paper-progress class="blue" value="100"></paper-progress>
+<!-- script src end block code -->
+    
+    
+    
+    <!-- end -->
+    <!-- end of mid-section -->
+  
+  <paper-spinner class="red" active=""></paper-spinner>
+    
+             <!-- start of the srv voice speech to text app html -->
+             <!-- start of stt head -->
+    
+    <paper-progress class="red" indeterminate=""></paper-progress>
+    
+    <h2 style="font-family:acme;color:white;">
+      THE SRV SPEECH TO TEXT APP ! 
+    </h2>
+
+
+          <h1 style="font-family:acme;color:white;size:16px;">WELCOME TO THE SRV SPEECH TO TEXT APP!</h1>
+          <h1 style="font-family:acme;color:white;size:16px;">BY SHAZEEL (SRV)</h1>
+          <!-- end of head -->
+
+
+          <!-- shadow-dom -->
+          <paper-spinner active="" class="green"></paper-spinner>
+          <!-- end of shadow-dom -->
+
+<!-- start of style.css for stt -->
+
+  <style>
+  * {
+    font-family: Verdana, Arial, sans-serif;
+  }
+  a:link {
+    color:#0000ff;
+    text-decoration: none;
+  }
+  a:visited {
+    color:#ffffff;
+  }
+  a:hover {
+    color:#f00000;
+  }
+  .button {
+    background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
+    border: 1px solid #076bd2;
+    border-radius: 3px;
+    color: #000000;
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.3;
+    padding: 8px 25px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #076bd2;
+    letter-spacing: normal;
+  }
+  .center {
+    padding: 10px;
+    text-align: center;
+  }
+  .final {
+    color: black;
+    padding-right: 3px;
+  }
+  .interim {
+    color: gray;
+  }
+  .info {
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    display: none;
+  }
+  .right {
+    float: right;
+  }
+  .sidebyside {
+    display: inline-block;
+    width: 45%;
+    min-height: 40px;
+    text-align: left;
+    vertical-align: top;
+  }
+  #headline {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  #info {
+    font-size: 20px;
+    text-align: center;
+    color: #777;
+    visibility: hidden;
+  }
+  #results {
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    min-height: 150px;
+  }
+  #start_button {
+    border: 0;
+    background-color:transparent;
+    padding: 0;
+  }
+</style>
+<h1 style="font-family:acme;color:silver;" class="center" id="headline">
+  <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html" style="font-family:acme;color:silver;">
+    Web Speech API</a> Demonstration by SRV</h1>
+<div id="info">
+  <p style="font-family:acme;color:silver;" id="info_start">Click on the microphone icon and begin speaking.</p>
+  <p style="font-family:acme;color:white;" id="info_speak_now">Speak now.</p>
+  <p style="font-family:acme;color:red;" id="info_no_speech">No speech was detected. You may need to adjust your
+    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+      microphone settings</a>.</p>
+  <p id="info_no_microphone" style="display:none">
+    No microphone was found. Ensure that a microphone is installed and that
+    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+    microphone settings</a> are configured correctly.</p>
+  <p style="font-family:acme;color:red;" id="info_allow">Click the "Allow" button above to enable your microphone.</p>
+  <p style="font-family:acme;color:red;" id="info_denied">Permission to use microphone was denied.</p>
+  <p style="font-family:acme;color:red;" id="info_blocked">Permission to use microphone is blocked. To change,
+    go to chrome://settings/contentExceptions#media-stream</p>
+  <p style="font-family:acme;color:red;" id="info_upgrade">Web Speech API is not supported by this browser.
+     Upgrade to <a href="//www.google.com/chrome" style="font-family:acme;color:green;">Chrome</a>
+     version 25 or later.</p>
+</div>
+<div class="right">
+  <button id="start_button" onclick="startButton(event)">
+    <img id="start_img" src="mic.gif" alt="Start"></button>
+</div>
+<div id="results">
+  <span id="final_span" class="final"></span>
+  <span id="interim_span" class="interim"></span>
+  <p>
+</div>
+<div class="center">
+  <div class="sidebyside" style="text-align:right">
+    <button style="font-family:acme;" id="copy_button" class="button" onclick="copyButton()">
+      Copy and Paste</button>
+    <div style="font-family:acme;" id="copy_info" class="info">
+      Press Control-C to copy text.<br>(Command-C on Mac.)
+    </div>
+  </div>
+  <div class="sidebyside">
+    <button style="font-family:acme;" id="email_button" class="button" onclick="emailButton()">
+      Create Email</button>
+    <div id="email_info" class="info" style="font-family:acme;">
+      Text sent to default email application.<br>
+      (See chrome://settings/handlers to change.)
+    </div>
+  </div>
+  <p style="font-family:acme;color:silver;">To change language and location choose your desired language and area down here.</p>
+  <p style="font-family:acme;color:silver;">
+  <div id="div_language">
+    <select id="select_language" onchange="updateCountry()" style="font-family:acme;color:black;"></select>
+    &nbsp;&nbsp;
+    <select id="select_dialect" tyle="font-family:acme;color:black;"></select>
+  </div>
+</div>
+
+<!-- script for stt is = to .js = to scripts/stt.javascript -->
+<script src="scripts/stt.js"></script>
+<!-- end of javascript -->
+
+<!-- shadow-dom -->
+<paper-spinner active="" class="green"></paper-spinner>
+<!-- end of shadow-dom -->
+
+    <paper-progress class="blue" indeterminate=""></paper-progress>
+    
+<!-- end of stt -->
+<!-- core 100001111 -->
+   
+  <paper-spinner active="" class="blue" ></paper-spinner>  
+  
+  
+    <paper-progress class="red" value="100"></paper-progress>
+
+            <!-- dialog -->
+          <!-- // [START code-block] -->
+    <p style="font-family:acme;color:white;">See what page of the app or web site ou are on by clicking on this button  <button id="show">Open Dialog</button></p>
+
+    <dialog>
+      <p style="font-family:acme;color:black;">WELCOME TO THE SRV_SIRI_WEB_VER_1 BY SRV!!</p>
+      <p style="font-family:acme;color:black;">You are in the HOME page.</p>
+      <button id="close">Close</button>
+    </dialog>
+
+  <script src="scripts/dialog.js"></script>
+    <!-- // [END code-block] -->
+    <!-- /end of dg -->
+    
+    <paper-progress value="100" class="blue"></paper-progress>
+    
+      <!-- href 2 -->
+    
+     <paper-spinner class="green" active=""></paper-spinner>
+
+    <section class="styleguide__next-lessons">
+    <div class="next-lessons container-medium" data-current-lesson="03">
+        <h3 style="font-family:acme;color:white;"><i class="icon icon-lessons"></i> NAVIGATION..</h3>
+        <ol class="list-lessons list-links">
+            <li style="font-family:acme;"><a href="index.html">HOME.</a></li>
+            <li style="font-family:acme;"><a href="index.html">SRV SPEECH TO TEXT.</a></li>
+          <li style="font-family:acme;"><a href="https://facebook.com/srv web games">Like us on facebook!.</a></li>
+          <li style="font-family:acme;"><a href="https://twitter.com/shazeel velji">Like us on twitter !</a></li>
+            <li style="font-family:acme;"><a href="srvpp.htm">SRV PAPPU-PAKIA BIRD GAME!</a></li>
+          <li  style="font-family:acme;"><a href="cl/index.html">PLAY A TIC TAC TOE GAME ONLINE OR AGAINST A FRIEND !</a></li>
+          <li  style="font-family:acme;"><a href="https://shazeel.weebly.com">SRV SHAZEEL VELJI</a></li>
+        </ol>
+    </div>
+    </section>
+    
+     <paper-spinner class="green" active=""></paper-spinner>
+    
+  <!-- end of href -->
+    
+    <paper-progress class="red" value="100"></paper-progress>
+
+  <!-- logger for the user anonymus data -->
+    
+     <paper-spinner class="blue" active=""></paper-spinner>
+
+   <h1 style="font-family:acme;color:blue;">Beacon Transmitter</h1>
+    <p style="font-family:acme;color:white;">Available behind a flag in <a href="http://www.chromestatus.com/feature/5517433905348608">Chrome 37</a></p>
+
+    <p style="font-family:acme;color:white;">Beacon let you to asynchronously transfer small HTTP data from
+    the User Agent to a web server. It can be used e.g. to send analytics
+    or diagnostics code without delaying the page's unload or affecting
+    the performance of the next navigation.</p>
+
+    <p style="font-family:acme;color:white;">This page sends a beacon to a srv server at
+    <code>https://putsreq.herokuapp.com/Dt7t2QzUkG18aDTMMcop</code> on unload.
+    Close this page and visit this site to see your .log diagnostic report at this site
+    <a href="https://putsreq.herokuapp.com/Dt7t2QzUkG18aDTMMcop/inspect">PutsReq inspect page</a>
+    to see if the beacon data was received.
+    </p>
+
+    <p style="font-family:acme;color:white;size:18px;">
+      This transmitter will help us monitor any errors, or problems , BY SRV .
+    </p>
+    
+     <paper-spinner class="blue" active=""></paper-spinner>
+
+<!-- // [START code-block] -->
+<script>
+  function() {
+    window.addEventListener('pagehide', logData, false);
+    function logData() {
+        navigator.sendBeacon(
+          'https://putsreq.herokuapp.com/Dt7t2QzUkG18aDTMMcop',
+          'Sent by a beacon!');
+    }
+  }();
+</script>
+<!-- // [END code-block] -->
+    
+    <paper-progress class="blue" value="100"></paper-progress>
+    
+               <!-- paper check boxes -->
+    
+     <paper-spinner class="green" active=""></paper-spinner>
+
+           <p style="font-family:acme;color:blue;size:21px;">SETTINGS</p>
+
+  <core-label horizontal layout>
+    <paper-checkbox for></paper-checkbox>
+    <div vertical layout>
+      <h4 style="font-family:acme;color:white;">Notifications</h4>
+      <div style="font-family:acme;color:blue;">Notify me about new apps or updates by SRV.</div>
+    </div>
+  </core-label>
+
+  <br>
+
+  <core-label horizontal layout>
+    <paper-checkbox checked for></paper-checkbox>
+    <div vertical layout>
+      <h4 style="font-family:acme;color:white;">Auto-updates</h4>
+      <div style="font-family:acme;color:green;">Auto-update apps over wifi only or change in settings over to mobile data!</div>
+    </div>
+  </core-label>
+
+  <br>
+
+  <core-label horizontal layout>
+    <paper-checkbox for></paper-checkbox>
+    <div vertical layout>
+      <h4 style="font-family:acme;color:white;">Clear search history</h4>
+      <div style="font-family:acme;color:red;">Remove all the searches you have ever performed.</div>
+    </div>
+  </core-label>
+
+  <br>
+  <br>
+  <br>
+
+  <section>
+
+    <h3 style="font-family:acme;color:blue;">Sound</h3>
+
+    <core-label center horizontal layout>
+      <div flex style="font-family:acme;color:white;size:20px;">Touch sounds.</div>
+      <paper-checkbox class="blue" checked for></paper-checkbox>
+    </core-label>
+
+    <core-label center horizontal layout>
+      <div flex style="font-family:acme;color:white;size:20px;">Screen lock sound.</div>
+      <paper-checkbox class="blue" for></paper-checkbox>
+    </core-label>
+
+    <core-label center horizontal layout>
+      <div flex style="font-family:acme;color:white;size:20px;">Vibrate on touch.</div>
+       <div flex style="font-family:acme;color:black;size:20px;">Check to see if device is capable..</div>
+
+
+    <div class="output">
+      <button style="font-family:acme;color:green;" id="start">Start</button>
+      <button style="font-family:acme;color:red;" id="stop">Stop</button>
+    </div>
+      
+       <paper-spinner class="green" active=""></paper-spinner>
+
+    <!-- // [START code-block] -->
+    <script>
+
+    var context = new AudioContext();
+    var source;
+
+    function stop() {
+      if (source) {
+        source.stop();
+        source = null;
+      }
+    }
+
+    document.getElementById('stop').addEventListener('click', stop);
+    document.getElementById('start').addEventListener('click', function() {
+      stop();
+      source = context.createOscillator();
+      source.frequency.value = 200;
+      source.connect(context.destination);
+      source.loop = true;
+      source.start(0);
+    });
+
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        context.suspend();
+      } else {
+        context.resume();
+      }
+    });
+
+    </script>
+    <!-- // [END code-block] -->
+
+      <paper-checkbox class="blue" for></paper-checkbox>
+    </core-label>
+
+  </section>
+
+  <!-- end of paper check boxes -->
+
+<!-- / end of logger -->
+    
+    <paper-progress class="red" value="100"></paper-progress>
+    
+     <paper-spinner class="red" active=""></paper-spinner>
+
+
+        <!-- by -->
+
+          <div class="highlight-module  highlight-module--right   highlight-module--remember">
+    <div class="highlight-module__container  icon-exclamation ">
+        <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--pull-1   ">
+            <p style="font-family:acme;color:white;" class="highlight-module__title"> Remember</p>
+            <p style="font-family:acme;color:white;" class="highlight-module__text"> CREATED BY SHAZEEL </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- end by -->
+
+
+    
+    <paper-progress class="blue" value="100"></paper-progress>
+  <!-- color box 9 -->
+   <h3 style="font-family:acme;color:blue;size:18px;">Web Animation below move your mouse cursor over the boxes and see the animation.</h3>
+    
+     <paper-spinner  active></paper-spinner>
+
+    <!-- // [START code-block] -->
+    <style type="text/css">
+    .box {
+      width: 225px;
+      height: 150px;
+      display: inline-block;
+      background: #eee;
+    }
+    </style>
+
+    <div id="holder">
+      <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var eventHandler = function(ev) {
+      var element = ev.target;
+      if (!element || !element.classList.contains('box')) return;
+
+      // Choose a random background color to animate to.
+      var hue = Math.random() * 360;
+      var target = 'hsl(' + hue + ', 100%, 50%)'
+
+      // Create keyframes and use element.animate().
+      var keyframes = [
+        { background: '#eee' },
+        { background: target }
+      ];
+      var duration = 1000;
+      element.animate(keyframes, duration);
+    };
+    var holder = document.getElementById('holder');
+    holder.addEventListener('mouseover', eventHandler);
+    // mouseover is mostly emulated on a touch device by tapping.
+    </script>
+
+    <!-- // [END code-block] -->
+<!-- /end -->
+    
+    <paper-progress class="red" value="100"></paper-progress>
+    
+     <paper-spinner class="blue" active=""></paper-spinner>
+
+          <!-- by -->
+
+          <div class="highlight-module  highlight-module--right   highlight-module--remember">
+    <div class="highlight-module__container  icon-exclamation ">
+        <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--pull-1   ">
+            <p style="font-family:acme;color:white;" class="highlight-module__title"> Remember</p>
+            <p style="font-family:acme;color:white;" class="highlight-module__text"> CREATED BY S.R.V. </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- end by -->
+    
+    <paper-progress class="blue" value="100"></paper-progress>
+    
+     <paper-spinner class="yellow" active=""></paper-spinner>
+     <paper-spinner class="red" active=""></paper-spinner>
+
+      <!-- srv quote -->
+
+            <section class="styleguide__quote">
+    <div class="quote">
+        <div class="container">
+            <blockquote class="quote__content g-wide--push-1 g-wide--pull-1 g-medium--push-1">
+                <p class="xxlarge" STYLE=":FONT-FAMILY:ACME;FONT-SIZE:20PX;color:silver;">S.R.V / DONT CODE TODAY WHAT YOU CAN'T DEBUG TOMORROW</p>
+            </blockquote>
+        </div>
+    </div>
+</section>
+    
+     <paper-spinner class="red" active=""></paper-spinner>
+     <paper-spinner class="red" active=""></paper-spinner>
+
+    <paper-progress class="red" value="100"></paper-progress>
+    <paper-progress class="red" value="100"></paper-progress>
+    
+<!-- end of quote -->
+
+
+<!-- click .js -->
+ <script src="scripts/click.js"></script>
+<!-- end/ -->
+
+
+<!-- enbuild .js -->
+    <script src="scripts/main.js"></script>
+  <!-- end of .js -->
+
+    <!-- google isogram f (e) -->
+  <script src="scripts/google-analytics.js"></script>
+  <!-- end of isogram -->
+  
+    
+  </body>
+</html>
