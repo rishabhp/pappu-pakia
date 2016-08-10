@@ -233,10 +233,12 @@ mit.main = function() {
 
   // Game play on mouse clicks too!
   window.addEventListener('mousedown', function(e) {
+    if (e.which != 1) return;
     mit.ascend();
   }, false);
 
   window.addEventListener('mouseup', function(e) {
+    if (e.which != 1) return;
     mit.descend();
   }, false);
 
