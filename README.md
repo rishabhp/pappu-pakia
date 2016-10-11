@@ -2,7 +2,7 @@
 
 ![Pappu Pakia](http://i.imgur.com/zYD37.png)
 
-This HTML5 Game (Pappu Pakia) has been happily made for the
+This [HTML5](http://www.w3schools.com/html/html5_intro.asp) Game (Pappu Pakia) has been happily made for the
 [Github Game Off 2012](https://github.com/blog/1303-github-game-off).
 
 **[PLAY THE GAME HERE](http://khele.in/pappu-pakia/)**
