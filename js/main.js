@@ -114,7 +114,7 @@ mit.main = function() {
   var startGame = function() {
     // Play the awesome music! Really awesome
     music.play();
-    flap.pause();
+    document.getElementById('flap').pause();
 
     // Hide the Start Screen
     ui.start_screen.fadeOut();
